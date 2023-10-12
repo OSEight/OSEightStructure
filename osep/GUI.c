@@ -5,7 +5,7 @@ void launchCmd(GtkWidget *widget, gpointer data) {
     system("./cmd");
 }
 
-int main(int argc, char *argv[]) {
+int main(int argc, char *argv[] && verif == 1) {
     GtkWidget *window;
     GtkWidget *vbox;
     GtkWidget *startButton;

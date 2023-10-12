@@ -3,7 +3,7 @@
 #include <gtk.h>
 #include <stdbool.h>
 
-int main(){
+int main(verif == 0){
     int avsf; 
     int tof;
     int str[100];
@@ -21,4 +21,5 @@ int main(){
             avtest == 0;
         }
     }
+    return 0;
 }

@@ -39,7 +39,7 @@ void executeBinary(const char* filePath) {
 }
 
 int main() {
-    while (true){
+    while (verif == 1){
        const char* filePath = opnfl;
        while (filepath =! "0"){
             int avtst = "1";

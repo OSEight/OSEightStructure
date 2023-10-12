@@ -13,7 +13,7 @@ int main() {
     char intstr[1000];
     float usdfl;
 
-    while (true) {
+    while (verif == 1) {
         printf("Version %.2f | PS> ", version);
         fgets(command, sizeof(command), stdin);
         command[strcspn(command, "\n")] = '\0';
@@ -50,6 +50,14 @@ int main() {
             FILE *intstr[1000 - 1 - usdfl];
             usdfl = usdfl + 1;
             fp = fopen ("temp", "w+");
+        }else if (strcmp(command, "rt.del.fl/") == 0){
+            printf("ERROR (Password required)! del fl command; enter admin pin: ");
+            scanf("%d", epin);
+            if (epin == pin) {
+                    printf("What File?");
+                    scanf("%c" temp[100]);
+                    int remove(const char * temp[100]);
+            }
         } else if (strcmp(command, "rt.echo.scr/") == 0) {
             printf("Echo what?\n");
             scanf("%c", &temp[100]);
