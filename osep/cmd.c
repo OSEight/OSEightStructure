@@ -50,6 +50,10 @@ int main() {
             FILE *intstr[1000 - 1 - usdfl];
             usdfl = usdfl + 1;
             fp = fopen ("temp", "w+");
+        } else if (strcmp(command, "rt.echo.scr/") == 0) {
+            printf("Echo what?\n");
+            scanf("%c", &temp[100]);
+            printf("%c" &temp[100]);
         } else {
             printf("| ! ERROR: COMMAND NOT FOUND ! |\n");
         }
