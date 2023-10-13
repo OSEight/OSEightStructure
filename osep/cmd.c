@@ -50,19 +50,28 @@ int main() {
             FILE *intstr[1000 - 1 - usdfl];
             usdfl = usdfl + 1;
             fp = fopen ("temp", "w+");
+            fclose(fp)
         }else if (strcmp(command, "rt.del.fl/") == 0){
             printf("ERROR (Password required)! del fl command; enter admin pin: ");
             scanf("%d", epin);
             if (epin == pin) {
                     printf("What File?");
-                    scanf("%c" temp[100]);
-                    int remove(const char * temp[100]);
+                    scanf("%c" &temp[100]);
+                    int remove(const char * &temp[100]);
             }
         } else if (strcmp(command, "rt.echo.scr/") == 0) {
             printf("Echo what?\n");
             scanf("%c", &temp[100]);
             printf("%c" &temp[100]);
-        } else {
+        } else if (strcmp(command, "rt.fl.wrt/") == 0){
+            printf("What file to write to?");
+            scanf("%c", &temp[100]);
+            fp = fopen(temp[100], "w");
+            printf("Write what?");
+            scanf("%c", &temp[100]);
+            fprintf("%c" &temp[100]);
+            fclose(fp);
+        }else {
             printf("| ! ERROR: COMMAND NOT FOUND ! |\n");
         }
     }
