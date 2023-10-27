@@ -15,7 +15,7 @@ int main(verif == 0){
         strn = strn - 1;
         if (str[] == 00000){
             avsf = 0;
-            printf("Antivirus Plus Defended You!");
+            printf("Antivirus Plus Defended You! -- suspicious.zero.multi");
         } else {avsf = 1;}
         if (eof == 1) {
             avtest == 0;
